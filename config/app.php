@@ -173,9 +173,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
-        /**
-         * Third-Party Service Providers
-         */
+        
 
         Proengsoft\JsValidation\JsValidationServiceProvider::class,
        Intervention\Image\ImageServiceProvider::class,
@@ -188,7 +186,8 @@ return [
         VanguardLTE\Services\Auth\Api\JWTServiceProvider::class,
         VanguardLTE\Providers\AppServiceProvider::class,
         VanguardLTE\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
+        VanguardLTE\Providers\BroadcastServiceProvider::class,
+        VanguardLTE\Providers\BroadcastServiceProvider::class,
         VanguardLTE\Providers\EventServiceProvider::class,
         VanguardLTE\Providers\RouteServiceProvider::class,
 

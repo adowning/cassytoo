@@ -23,7 +23,9 @@ namespace VanguardLTE\Http
             'api' => [
                 'VanguardLTE\Http\Middleware\UseApiGuard', 
                 'throttle:60,1', 
-                'bindings'
+                'bindings',
+                'ip.whitelist' => '\VanguardLTE\Http\Middleware\IpWhitelistMiddleware'
+
             ]
         ];
         protected $routeMiddleware = [

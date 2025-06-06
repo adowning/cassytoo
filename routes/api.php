@@ -144,3 +144,7 @@ Route::prefix('V2')->group(function () {
 });
 */
 
+Route::group(['prefix' => 'v1', 'middleware' => 'ip.whitelist'], function () {
+    Route::get('/games', 'Api\HonoApiController@getGames');
+    // Add other routes for your Hono server here
+});
